@@ -1,6 +1,23 @@
+@layer base, header , link;
+
+@layer base {
+    body {
+        color: black;
+    }
+}
+@layer header {
+    header {
+        color: #333;
+    }
+}
+@layer link {
+    header ul li a {
+        color: #d33;
+    }
+}
+
 body {
     width: 1vw;
-    color: black;
 
     header {
         width: 100vw;
@@ -9,7 +26,6 @@ body {
         align-items: center;
         padding: 1em .5em;
         background-color: #eee;
-        color: #333;
 
         h1 {
             flex-grow: 3;
@@ -24,10 +40,6 @@ body {
                 display: flex;
                 justify-content: space-around;
                 list-style: none;
-
-                li a {
-                    color: #d33;
-                }
             }
         }
     }

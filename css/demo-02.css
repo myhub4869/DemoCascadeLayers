@@ -1,6 +1,21 @@
+@layer base, header , link;
+@layer base {
+  body {
+    color: black;
+  }
+}
+@layer header {
+  header {
+    color: #333;
+  }
+}
+@layer link {
+  header ul li a {
+    color: #d33;
+  }
+}
 body {
   width: 1vw;
-  color: black;
 }
 body header {
   width: 100vw;
@@ -15,7 +30,6 @@ body header {
           align-items: center;
   padding: 1em 0.5em;
   background-color: #eee;
-  color: #333;
 }
 body header h1 {
   -webkit-box-flex: 3;
@@ -36,9 +50,6 @@ body header nav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-}
-body header nav ul li a {
-  color: #d33;
 }
 body main {
   width: 100vw;
